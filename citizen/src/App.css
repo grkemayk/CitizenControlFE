@@ -1,0 +1,137 @@
+.App {
+  text-align: center;
+  
+  width: 100vw;
+  height: 100vh;
+  background-color: #94afb0;
+
+
+}
+.citizenListBody
+{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 150px 150px;
+    grid-gap: 30px;
+    margin: 40px 10px;
+    height: 500px;
+    width: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+
+}
+
+.ContainerBody
+{
+  height: 90vh;
+  width: 75vw;
+  background-color: #bdcfd0;
+  border-radius: 25px;
+  box-shadow: rgba(50, 50, 93, 0.1) 0px 50px 100px -20px, rgba(0, 0, 0, 0.8) 0px 30px 60px -30px, rgba(10, 37, 64, 0.7) 0px -2px 6px 0px inset;  overflow-y:auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  max-height: 90vh;
+  margin-left: 3vw;
+}
+.navBar
+{
+  background-color: #3744ff;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;    
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position:relative
+}
+.citizenCard
+{
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+.link
+{
+  text-decoration: none;
+}
+
+button {
+  background-color: #e1ecf4;
+  border-radius: 3px;
+  border: 1px solid #7aa7c7;
+  box-shadow: rgba(255, 255, 255, .7) 0 1px 0 0 inset;
+  box-sizing: border-box;
+  color: #39739d;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system,system-ui,"Segoe UI","Liberation Sans",sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.15385;
+  outline: none;
+  padding: 8px .8em;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  white-space: nowrap;
+}
+
+.button-8:hover,
+.button-8:focus {
+  background-color: #b3d3ea;
+  color: #2c5777;
+}
+
+.button-8:focus {
+  box-shadow: 0 0 0 4px rgba(0, 149, 255, .15);
+}
+
+.button-8:active {
+  background-color: #a0c7e4;
+  box-shadow: none;
+  color: #2c5777;
+}
+
+h3{
+  margin-top: 10px;
+}
+*{
+    margin: 0; padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+h2{
+    position: relative;
+    font-size: 8vw;
+    color: #f7f7f7;
+    text-transform: uppercase;
+  
+    rotate: 270deg;
+}
+h2::before{
+    content: attr(data-text);
+    position: absolute;
+    top: 0; left: 0;
+    width: 0; height: 100%;
+    color:#00ffff;
+    border-right: 2px solid #ffffff;
+    overflow: hidden;
+    animation: animate 6s linear infinite;
+} 
+@keyframes animate {
+    0%,10%,100%{ width: 0; }
+    70%,90%{ 
+      width: 100%; }
+}
+
